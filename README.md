@@ -31,6 +31,9 @@ team/<name>.md
 Use your first name in lowercase, for example `team/stacey.md`. The program
 defines what goes in the file.
 
+Keep it light: your name, your program goal and your flagship idea. No phone
+numbers, addresses or work details. This repo is public.
+
 ## How to contribute
 
 All changes go through a pull request. Nobody pushes directly to `main`.
@@ -53,9 +56,13 @@ All changes go through a pull request. Nobody pushes directly to `main`.
 Keep pull requests small and focused. One change per pull request makes review
 quick.
 
-### Don't commit secrets
+### Don't commit secrets or confidential material
 
-API keys and other secrets go in a local `.env` file, which `.gitignore`
-already excludes. **This repo is public**, so never commit keys, tokens or
-passwords. If you need to show which variables are required, add a
-`.env.example` with placeholder values.
+- **No client or confidential work material in any repo, public or private.**
+  Making a repo private hides a mistake; it doesn't prevent one.
+- **No keys, tokens or passwords.** API keys and other secrets go in a local
+  `.env` file, which `.gitignore` already excludes. If you need to show which
+  variables are required, add a `.env.example` with placeholder values.
+- **If something sensitive gets committed,** remove it, rotate any exposed key
+  right away, and tell the team. Deleting a file doesn't remove it from Git
+  history, so treat anything that was pushed as exposed.
